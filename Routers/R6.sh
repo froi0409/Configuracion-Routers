@@ -12,4 +12,3 @@ ip route add 10.10.20.80/29 dev enp8s0
 ip route add 10.10.20.88/29 dev enp8s0
 ip route add 10.10.20.96/29 dev enp8s0
 ip route add 10.10.20.104/29 dev enp8s0
-
