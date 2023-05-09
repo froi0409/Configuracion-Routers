@@ -31,7 +31,7 @@ iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.106 -p icmp --icmp-type echo-requ
 iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.107 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.108 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.109 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.158 -p icmp --icmp-type echo-request -j DROP
+iptables -A FORWARD -s 10.10.20.82 -d 10.10.20.158 -j DROP
 
 # Dispositivo 6 - 10.10.20.83
 iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.74 -p icmp --icmp-type echo-request -j DROP
@@ -47,8 +47,8 @@ iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.106 -p icmp --icmp-type echo-requ
 iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.107 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.108 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.109 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.158 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.162 -p icmp --icmp-type echo-request -j DROP
+iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.158 -j DROP
+iptables -A FORWARD -s 10.10.20.83 -d 10.10.20.162 -j DROP
 
 # Dispositivo 7 - 10.10.20.84
 iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.74 -p icmp --icmp-type echo-request -j DROP
@@ -62,7 +62,7 @@ iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.100 -p icmp --icmp-type echo-requ
 iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.101 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.107 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.109 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.158 -p icmp --icmp-type echo-request -j DROP
+iptables -A FORWARD -s 10.10.20.84 -d 10.10.20.158 -j DROP
 
 # Dispositivo 8 - 10.10.20.85
 iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.76 -p icmp --icmp-type echo-request -j DROP
@@ -76,7 +76,7 @@ iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.99 -p icmp --icmp-type echo-reque
 iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.101 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.107 -p icmp --icmp-type echo-request -j DROP
 iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.109 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.158 -p icmp --icmp-type echo-request -j DROP
-iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.162 -p icmp --icmp-type echo-request -j DROP
+iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.158 -j DROP
+iptables -A FORWARD -s 10.10.20.85 -d 10.10.20.162 -j DROP
 
 
